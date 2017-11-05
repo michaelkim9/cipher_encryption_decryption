@@ -2,6 +2,8 @@
 import os
 from caesar_cipher import Caesar
 from affine_cipher import Affine
+from atbash_cipher import Atbash
+from keyword_cipher import Keyword
 
 
 
@@ -18,7 +20,9 @@ def secret_messages():
 
 	cipher_dict = {
 		'CAESAR': Caesar,
-		'AFFINE': Affine
+		'AFFINE': Affine,
+		'ATBASH': Atbash,
+		'KEYWORD': Keyword
 	}
 
 	encryption_options = {

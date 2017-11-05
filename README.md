@@ -21,3 +21,5 @@ In this project, we take a few of the famous ciphers listed here and implement t
 
  - Casesar Cipher
  - Affine Cipher
+ - Atbash Cipher
+ - Keyword Cipher
