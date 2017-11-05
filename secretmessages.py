@@ -13,7 +13,6 @@ def clear_screen():
 	os.system('cls' if os.name == 'nt' else 'clear')
 
 
-
 def secret_messages():
 	'''Asks which cipher to implement.
 	   Determines whether to encrypt or decrypt message.'''
@@ -79,14 +78,22 @@ def secret_messages():
 			print('What is the message you would like to encrypt?')
 			encrypt_message = input('> ').upper()
 			print(active_cipher.encrypt(encrypt_message))
-			break
+			again = input('\nEncrypt or Decrypt something else? Y/n \n> ').upper()
+			if again == 'Y':
+				secret_messages()
+			else:
+				break
 
 		# Decrypt message
 		elif encrypt_choice == 'Decrypt':
 			print('What is the message you would like to decrypt?')
 			decrypt_message = input('> ').upper()
 			print(active_cipher.decrypt(decrypt_message))
-			break
+			again = input('\nEncrypt or Decrypt something else? Y/n \n> ').upper()
+			if again == 'Y':
+				secret_messages()
+			else:
+				break
 
 
 
