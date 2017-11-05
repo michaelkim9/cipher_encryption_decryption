@@ -1,6 +1,14 @@
 # Secret Messages
 ## Cipher Encrypting and Decrypting
 
+### Running the program
+
+To run the code, please run the following in Bash.
+
+'''bash
+$ python3 secretmessages.py
+'''
+
 ### The Task
 
 Most of us have, at one time or another, wanted to pass messages to our friends that other people couldn't read. Maybe it was a note in class, a midnight rendezvous, or something more serious like invasion plans. Whatever the purpose, you'd want your message to be encoded so only the people you want to can read it. That's where ciphers come in!
