@@ -21,7 +21,6 @@ class Atbash(Cipher):
 		   alphabet to obtain encrypted letter.'''
 		final_output = []
 
-
 		for letter in text.upper():
 			try:
 				index = self.alphabet.index(letter)
@@ -38,7 +37,6 @@ class Atbash(Cipher):
 		   decrypted alphabet index. Then matching back to the 
 		   alphabet to obtain decrypted letter.'''
 		final_output = []
-
 
 		for letter in text.upper():
 			try:

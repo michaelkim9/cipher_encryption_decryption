@@ -33,7 +33,6 @@ class Keyword(Cipher):
 		final_output = []
 		keyword_alphabet = self.alphabet_remove_keyword()
 
-
 		for letter in text:
 			if letter in self.alphabet:
 				index = self.alphabet.index(letter)
@@ -48,7 +47,6 @@ class Keyword(Cipher):
 		'''Decrypts message by matching index of letter to encrypted alphabet index.'''
 		final_output = []
 		keyword_alphabet = self.alphabet_remove_keyword()
-
 
 		for letter in text:
 			if letter in keyword_alphabet:

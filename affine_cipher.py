@@ -29,13 +29,11 @@ class Affine(Cipher):
 				except ValueError:
 					print('Invalid alpha value')
 
-
 		# Request beta key as input and verify validity
 		if not beta:
 			self.beta = int(input('Please enter beta key, any integer 1-100 \n > '))
 		else:
 			self.beta = beta
-
 
 		# Adding indexes to cipher list
 		for letter in self.alphabet:

@@ -17,7 +17,6 @@ def clear_screen():
 def secret_messages():
 	'''Asks which cipher to implement.
 	   Determines whether to encrypt or decrypt message.'''
-
 	cipher_dict = {
 		'CAESAR': Caesar,
 		'AFFINE': Affine,
