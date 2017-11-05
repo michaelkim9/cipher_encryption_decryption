@@ -32,18 +32,15 @@ def secret_messages():
 
 	cipher_list = [''.join(key.title()) for key in cipher_dict]
 
-
 	while True:
 		clear_screen()
 		# Print welcome screen
 		print('Welcome. Please select one of the following ciphers:\n'
 			  'Enter "QUIT" to quit.\n')
 
-
 		# Print cipher list
 		for cipher in cipher_list:
 			print('- {}'.format(cipher))
-
 
 		# User chooses cipher
 		cipher_input = input('\n> ').upper()
@@ -63,13 +60,11 @@ def secret_messages():
 		if not active_cipher:
 			break
 
-
 		# User chooses encryption or decryption
 		clear_screen()
 		print('{} cipher selected:\n'
 			  'Press "E" to Encrypt or "D" to Decrypt:'.format(cipher_input))
 		e_d_input = input('> ').upper()
-
 
 		# Check to see if encryption or decryption input is valid
 		while True:
@@ -80,14 +75,12 @@ def secret_messages():
 				e_d_input = input('Invalid entry. Please select "E" for Encryption and "D" for Decryption').upper()
 				continue
 
-
 		# Encrypt message
 		if encrypt_choice == 'Encrypt':
 			print('What is the message you would like to encrypt?')
 			encrypt_message = input('> ').upper()
 			print(active_cipher.encrypt(encrypt_message))
 			break
-
 
 		# Decrypt message
 		elif encrypt_choice == 'Decrypt':
