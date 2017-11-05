@@ -9,14 +9,14 @@ from keyword_cipher import Keyword
 
 # Clear the screen
 def clear_screen():
-	''' Clears the command screen.'''
+	'''Clears the command screen.'''
 	os.system('cls' if os.name == 'nt' else 'clear')
 
 
 
 def secret_messages():
-	''' Asks which cipher to implement.
-		Determines whether to encrypt or decrypt message.'''
+	'''Asks which cipher to implement.
+	   Determines whether to encrypt or decrypt message.'''
 
 	cipher_dict = {
 		'CAESAR': Caesar,
@@ -92,5 +92,5 @@ def secret_messages():
 
 
 if __name__ == '__main__':
-	''' Runs the code'''
+	'''Runs the code'''
 	secret_messages()

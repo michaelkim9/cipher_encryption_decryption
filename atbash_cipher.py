@@ -5,22 +5,20 @@ from ciphers import Cipher
 
 
 class Atbash(Cipher):
-	''' Encrypts and decrypts messages using the Atbash Cipher.
-		Formed by taking the alphabet and mapping it to its
-		reverse, so that the first letter becomes the last 
-		letter, the second letter become the second to last
-		letter, and so on.'''
-
+	'''Encrypts and decrypts messages using the Atbash Cipher.
+	   Formed by taking the alphabet and mapping it to its
+	   reverse, so that the first letter becomes the last 
+	   letter, the second letter become the second to last
+	   letter, and so on.'''
 	def __init__(self):
 		self.alphabet = list(string.ascii_uppercase)
 		self.reversed_alphabet = list(string.ascii_uppercase)[::-1]
 
-
 	# Encrypts message
 	def encrypt(self, text):
-		''' Encrypts message bymatching index of letter to
-			encrypted alphabet index. Then matching back to the 
-			alphabet to obtain encrypted letter.'''
+		'''Encrypts message bymatching index of letter to
+		   encrypted alphabet index. Then matching back to the 
+		   alphabet to obtain encrypted letter.'''
 		final_output = []
 
 
@@ -34,12 +32,11 @@ class Atbash(Cipher):
 		return ''.join(final_output)
 
 
-
 	# Decrypts message
 	def decrypt(self, text):
-		''' Decrypts message bymatching index of letter to
-			decrypted alphabet index. Then matching back to the 
-			alphabet to obtain decrypted letter.'''
+		'''Decrypts message bymatching index of letter to
+		   decrypted alphabet index. Then matching back to the 
+		   alphabet to obtain decrypted letter.'''
 		final_output = []
 
 

@@ -6,14 +6,13 @@ from ciphers import Cipher
 
 
 class Keyword(Cipher):
-	''' Encrypts and decrypts messages using the Keyword cipher.'''
+	'''Encrypts and decrypts messages using the Keyword cipher.'''
 	def __init__(self, keyword = None):
-		''' Ask user for keyword'''
+		'''Ask user for keyword'''
 		if not keyword:
 			self.input_keyword = list(input('Enter a keyword of unique letters \n> ').upper())
 		else:
 			self.input_keyword = keyword.upper()
-
 
 		# Creating 2 lists of alphabet. One of regular alphabet. Other to modify with keyword\
 		self.alphabet = list(string.ascii_uppercase)
@@ -30,7 +29,7 @@ class Keyword(Cipher):
 
 	# Encrypts user message
 	def encrypt(self, text):
-		''' Encrypts message by matching index of letter to encrypted alphabet index.'''
+		'''Encrypts message by matching index of letter to encrypted alphabet index.'''
 		final_output = []
 		keyword_alphabet = self.alphabet_remove_keyword()
 
@@ -46,7 +45,7 @@ class Keyword(Cipher):
 
 	# Decrypts user message
 	def decrypt(self, text):
-		''' Decrypts message by matching index of letter to encrypted alphabet index.'''
+		'''Decrypts message by matching index of letter to encrypted alphabet index.'''
 		final_output = []
 		keyword_alphabet = self.alphabet_remove_keyword()
 
