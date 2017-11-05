@@ -5,9 +5,9 @@
 
 To run the code, please run the following in Bash.
 
-'''bash
+```bash
 $ python3 secretmessages.py
-'''
+```
 
 ### The Task
 
