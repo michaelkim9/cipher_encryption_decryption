@@ -20,7 +20,7 @@ class Caesar(Cipher):
             except ValueError:
                 output.append(char)
             else:
-                output.append(self.FORWARD[index+self.offset])
+                output.append(self.FORWARD[index + self.offset])
         return ''.join(output)
 
     def decrypt(self, text):
@@ -32,5 +32,5 @@ class Caesar(Cipher):
             except ValueError:
                 output.append(char)
             else:
-                output.append(self.BACKWARD[index-self.offset])
+                output.append(self.BACKWARD[index - self.offset])
         return ''.join(output)
